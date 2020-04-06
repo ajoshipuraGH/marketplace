@@ -1,0 +1,102 @@
+/* media queries */
+$mobile-only: 480px;
+$tablet-up: 481px;
+$large-mobile-up: 516px;
+$desktop-up: 981px;
+$up-to-desktop: 980px;
+$lrg-tablets: 1280px;
+$up-to-calcite-tablet: 860px;
+$calcite-tablet-up: 861px;
+$official-tablet-up: 768px;
+$official-ipad-up: 1025px;
+$large-desktop:1400px;
+
+
+//2020 - New Whites & Grays
+$blk-000: #ffffff;
+$blk-003: #f7f7f7;
+$blk-005: #f8f8f8;
+$blk-010: #f3f3f3;
+$blk-020: #eaeaea;
+$blk-030: #dfdfdf;
+$blk-040: #d4d4d4;
+$blk-140: #6a6a6a;
+$blk-160: #555555;
+$blk-180: #404040;
+$blk-200: #2b2b2b;
+$blk-220: #151515;
+$blk-240: #000000;
+$white: #fff;
+$black: #323232;
+$blue: #0079c1;
+
+
+//colors
+//Naming Convention for Colors with Opacity Values: $colorOpacityValue
+
+$whiteOpacity00: rgba($white, 0);     // white background with 0 opacity
+$whiteOpacity50: rgba($white, 0.5);     // white background with .5 opacity
+$whiteOpacity80: rgba($white, 0.80);     //white background with 0.80 opacity
+$whiteOpacity85: rgba($white, 0.85);     //white background with 0.85 opacity
+$whiteOpacity90: rgba($white, 0.90);     //white background with 0.90 opacity
+$whiteOpacity95: rgba($white, 0.95);     //white background with 0.95 opacity
+$whiteOpacity97: rgba($white, 0.97);     //white background with 0.97 opacity
+
+$blackOpacity00: rgba($black, 0);     // white background with 0 opacity
+$blackOpacity50: rgba($black, 0.5);     // white background with .5 opacity
+$blackOpacity80: rgba($black, 0.80);     //esri black background with 0.80 opacity
+$blackOpacity85: rgba($black, 0.85);     //esri black background with 0.85 opacity
+$blackOpacity90: rgba($black, 0.90);     //esri black background with 0.90 opacity
+$blackOpacity95: rgba($black, 0.95);     //esri black background with 0.95 opacity
+$blackOpacity97: rgba($black, 0.97);     //esri black background with 0.97 opacity
+
+//additional colors not in calcite
+$med-white: #e6e6e6;
+$med-purple: #323262;
+$med-blue: #49b0f2;
+$bright-blue: #74c6ff;
+$true-black: #000; 
+$med-gray:  #bcbcbc;
+
+//esri theme color palette
+$yellow-1-FFF874: #FFF874;
+$yellow-2-FFF200: #FFF200;
+$yellow-3-F0D235: #F0D235;
+$yellow-orange-1-FFC926: #FFC926;
+$yellow-orange-2-FFA304: #FFA304;
+$yellow-orange-3-DD751F: #DD751F;
+$orange-1-FC9B46: #FC9B46;
+$orange-3-FE721A: #FE721A;
+$red-orange-1-F18853: #F18853;
+$red-orange-2-E15615: #E15615;
+$red-orange-3-C7471A: #C7471A;
+$red-1-FE3A3A: #FE3A3A;
+$red-2-D02011: #D02011;
+$pink-1-EF6FBF: #EF6FBF;
+$pink-2-D3298D: #D3298D;
+$pink-3-B42378: #B42378;
+$violet-red-1-DE84FB: #DE84FB;
+$violet-red-2-9F20C8: #9F20C8;
+$violet-red-3-8113A5: #8113A5;
+$violet-1-AE82FA: #AE82FA;
+$violet-2-8E42D1: #8E42D1;
+$violet-3-642CC7: #642CC7;
+$blue-1-77D4FD: #77D4FD;
+$blue-2-3C98EE: #3C98EE;
+$blue-3-394EEE: #394EEE;
+$green-blue-1-86FCFB: #86FCFB;
+$green-blue-2-02CCB5: #02CCB5;
+$green-blue-3-039EA8: #039EA8;
+$green-1-96FD8D: #96FD8D;
+$green-2-5FCD47: #5FCD47;
+$green-3-17B81E: #17B81E;
+$yellow-green-1-DEFE7F: #DEFE7F;
+$yellow-green-2-AEDF24: #AEDF24;
+$yellow-green-3-8ED627: #8ED627;
+$gray-1-F4F4F4: #F4F4F4;
+$gray-2-CCCCCC: #CCCCCC;
+
+
+//new calcite colors:
+$gray-85: #555555;
+$off-black-dark: #151515;

@@ -1,0 +1,46 @@
+{
+    "reviews":[
+        {
+            "name": "User Reviewer name 1",
+            "rating": 4.5,
+            "imageUrl": "https://www.esri.com/content/dam/esrisites/en-us/marketplace/test-assets/marketplace-services-listings-banner-icon-200x200.jpg",
+            "bodytext": "Link Interactive is the king of choices. You can choose a contract or no contract, and if you do opt for a contract, then you can choose the length. ",
+            "time": "2 days ago"
+        },
+        {
+          "name": "User Reviewer name 2",
+          "rating": 2.5,
+          "imageUrl": "https://www.esri.com/content/dam/esrisites/en-us/marketplace/test-assets/marketplace-product-listings-banner-icon-200x200.jpg",
+          "bodytext": "Frontpoint’s system works for just about everyone: big house or small house, renter or homeowner, technophile or aspiring Luddite.",
+          "time": "3 months ago"
+        },
+        {
+          "name": "User Reviewer name 3",
+          "rating": 1.5,
+          "imageUrl": "https://www.esri.com/content/dam/esrisites/en-us/marketplace/test-assets/marketplace-services-listings-banner-icon-200x200.jpg",
+          "bodytext": "Multiple security companies in this review have released statements about their response to the COVID-19 crisis.",
+          "time": "2 months ago"
+        },
+        {
+          "name": "User Reviewer name 4",
+          "rating": 1.5,
+          "imageUrl": "https://www.esri.com/content/dam/esrisites/en-us/marketplace/test-assets/marketplace-services-listings-banner-icon-200x200.jpg",
+          "bodytext": "Annual And Transition Reports Pursuant To Section 13 And 15(D) Where The Regulation S-K Item 405 Box (Relating To Section 16(A) Reports) On The Cover Page Is Not Checked (INITIAL FILING)",
+          "time": "1 year ago"
+        },
+        {
+          "name": "User Reviewer name 5",
+          "rating": 4,
+          "imageUrl": "https://www.esri.com/content/dam/esrisites/en-us/marketplace/test-assets/marketplace-services-listings-banner-icon-200x200.jpg",
+          "bodytext": "Multiple security companies in this review have released statements.",
+          "time": "10 months ago"
+        },
+        {
+          "name": "User Reviewer name 6",
+          "rating": 5,
+          "imageUrl": "https://www.esri.com/content/dam/esrisites/en-us/marketplace/test-assets/marketplace-product-listings-banner-icon-200x200.jpg",
+          "bodytext": "Vivint also has professional installation, so you don’t have to break a sweat setting up your system. And it has full smart home support, so you can automate everything from your door locks to your bedside lamp.",
+          "time": "4 days ago"
+        }
+    ]
+}

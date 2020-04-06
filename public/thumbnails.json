@@ -1,0 +1,52 @@
+{
+    "thumbnails":[
+        {
+            "imgUrl": "https://www.esri.com/content/dam/esrisites/en-us/marketplace/test-assets/marketplace-services-listings-banner-screenshot-1-700x460.jpg",
+            "iconUrl": "https://www.esri.com/content/dam/esrisites/en-us/marketplace/test-assets/marketplace-services-listings-banner-icon-200x200.jpg",
+            "title": "Geomarvel Professional Services",
+            "category": "professional services",
+            "subheader": "by GeoMarvel",
+            "bodytext": "Maps Help Tanker Owners and Coastal Communities Prepare for Potential Disaster GIS Enhances Safety Efficiency at Dow Corning’s Midland Plant",
+            "pricing": "$110 / Year",
+            "purchaseURL": "http://www.esri.com/en-us/arcgis-desktop/buy",
+            "rating": "2.5",
+            "freetrialURL": "http://www.esri.com/en-us/arcgis-desktop/trial"
+        },
+        {
+            "imgUrl": "https://www.esri.com/content/dam/esrisites/en-us/marketplace/test-assets/marketplace-services-listings-banner-screenshot-2-700x460.jpg",
+            "iconUrl": "https://www.esri.com/content/dam/esrisites/en-us/marketplace/test-assets/marketplace-product-listings-banner-icon-200x200.jpg",
+            "category": "category: success story",
+            "subheader": "by DTN Weather",
+            "title": "Managing Risk with Location Intelligence",
+            "bodytext": "The frequency and intensity of natural disasters has increased in recent years. Explore how the insurance industry is addressing these new risks.",
+            "pricing": "$120 / Year",
+            "purchaseURL": "http://www.esri.com/en-us/arcgis-desktop/buy",
+            "rating": "3.5",
+            "freetrialURL": "http://www.esri.com/en-us/arcgis-desktop/trial"
+        },
+        {
+            "imgUrl": "https://www.esri.com/content/dam/esrisites/en-us/marketplace/test-assets/marketplace-services-listings-banner-screenshot-3-700x460.jpg",
+            "iconUrl": "https://www.esri.com/content/dam/esrisites/en-us/common/icons/product-logos/Insights.png",
+            "title": "When the Tides Rise",
+            "category": "category: success story",
+            "subheader": "subheader: success story",
+            "bodytext": "Discover how innovative insurance companies are leveraging location intelligence to proactively forecast the impact of catastrophic (CAT) events.",
+            "pricing": "$133 / Year",
+            "purchaseURL": "http://www.esri.com/en-us/arcgis-desktop/buy",
+            "rating": "1.5",
+            "freetrialURL": "http://www.esri.com/en-us/arcgis-desktop/trial"
+        },
+        {
+            "imgUrl": "https://www.esri.com/content/dam/esrisites/en-us/marketplace/test-assets/marketplace-services-listings-banner-screenshot-4-700x460.jpg",
+            "iconUrl": "https://www.esri.com/content/dam/esrisites/en-us/arcgis/products/arcgis-excalibur/ArcGIS_Excalibur_220.png",
+            "title": "Innovating Location Intelligence",
+            "category": "category: success story",
+            "subheader": "subheader: success story",
+            "bodytext": "Hear from Esris Alexander Martonik on how insurance companies are transforming strategic operations with enhanced spatial analytics.",
+            "pricing": "$13422 / Year",
+            "purchaseURL": "http://www.esri.com/en-us/arcgis-desktop/buy",
+            "rating": "4.5",
+            "freetrialURL": "http://www.esri.com/en-us/arcgis-desktop/trial"
+        }
+    ]
+}

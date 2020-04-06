@@ -1,0 +1,572 @@
+@import './index.scss';
+$theme: #17bb1e;
+svg, .icon-ui-svg{
+	fill: $theme;
+}
+[data-attribute = "product-listing"]{
+	display:none !important;
+}
+
+[data-attribute = "services-listing"]{
+	//display:none !important;
+}
+
+hr.separator{
+	background-color: $theme;
+}
+
+.star-ratings{
+	&-wrapper{
+		position: relative;
+		height:37px;
+		width:200px;
+		&.small{
+			height:20px;
+		}
+	}
+	&-filled,&-blank {
+		height: 37px;
+		background-repeat: no-repeat;
+		position: absolute;
+		width: 100%;
+		left: 0;
+		top: 0;
+		background-size: cover;
+		&.small{
+
+		}
+
+	}
+	&-filled{
+		background-image: url('https://www.esri.com/content/dam/esrisites/en-us/marketplace/test-assets/marketplace-product-listings-review-stars-fill-120x20.svg');
+		html[dir="rtl"] & {
+			right: -1px;
+			transform: scaleX(-1);
+		}
+	}
+	&-blank{
+		background-image: url('https://www.esri.com/content/dam/esrisites/en-us/marketplace/test-assets/marketplace-product-listings-review-stars-outline-120x20.svg');
+	}
+}
+
+.listingsGallery{
+	background-color: $blk-003;
+	background-image: url('https://www.esri.com/content/dam/esrisites/en-us/marketplace/test-assets/marketplace-services-listings-banner-bg-2560x750.jpg');
+	background-repeat: no-repeat;
+	background-position: bottom;
+	padding: 100px 0 60px;
+	min-height: 620px;
+	&-wrapper{
+		display:flex;
+		flex-direction: column-reverse;
+		@media screen and (min-width: $up-to-calcite-tablet){
+			flex-direction: row-reverse;
+		}
+
+	}
+	&-text{
+	flex-basis: 50%;
+    padding: 40px 20px;
+    @media screen and (min-width: $up-to-calcite-tablet){
+		padding: 40px;
+		padding: 0 40px 0 0;
+		html[dir="rtl"]{
+			padding: 0 0 0 40px;
+		}
+
+    }
+    
+	}
+	&-image{
+		flex-basis: 50%;
+		&-wrapper{
+      padding:0;
+      -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: fadein 2s; /* Firefox < 16 */
+       -ms-animation: fadein 2s; /* Internet Explorer */
+        -o-animation: fadein 2s; /* Opera < 12.1 */
+           animation: fadein 2s;
+		}
+	}
+	&-header{
+		display:flex;
+		flex-direction: row;
+		padding-bottom:20px;
+		flex-wrap: wrap;
+		@media screen and (min-width: $official-ipad-up){
+			flex-wrap: nowrap;
+		}
+
+		&-logo{
+			flex:0 0 220px;
+			svg,img{
+				width:200px;
+				height:200px;
+			}
+		}
+		&-content{
+			flex-basis: auto;
+			padding: 0;
+			@media screen and (min-width: $official-ipad-up){
+				padding: 0 20px;
+			}
+			p{
+				margin:10px 0;
+			}
+		}
+		&-cat{
+			color:$black;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			font-size: 0.9375rem;
+
+		}
+		&-heading{
+			color: $black;
+			font-size: 1.66016rem;
+			line-height: 1.25;
+			@media screen and (min-width: $official-ipad-up){
+				font-size: 1.99974rem;
+			}
+			@media screen and (min-width: $lrg-tablets){
+				font-size: 2.40307rem;
+			}
+		}
+		&-subheader{
+			font-size: 0.9375rem;
+      		color:$black;
+		}
+
+	}
+	&-review{
+    padding-bottom:30px;
+    display: flex;
+    align-items: center;
+    .rating-text{
+      color:$blue;
+      padding: 0 20px;
+      font-size:16px;
+    }
+
+	}
+	&-price{
+	padding-bottom:30px;
+		&-text, &-currency{
+			display:inline-block;
+		}
+		&-text{
+		font-weight:700;
+		}
+		&-currency{
+			select{
+				font-weight:700;
+				background-color: initial;
+				height: auto;
+				margin: 0 10px;
+				border: 1px solid #cccccc;
+				padding: 0.2rem 1.5rem 0.2rem 0.4rem ;
+			}
+		} 
+
+	}
+	&-cta{
+		padding-bottom:10px;
+	}
+	&-specialities{
+		&-header{
+			color:$black;
+			font-weight:700;
+		}
+		&-icons{
+			.specialities-icon{
+				display:inline-block;
+				width:30%;
+				padding:12px 0;
+			}
+		}
+	}
+	&-store{
+		padding-bottom:20px;
+		.storeLinks{
+			display:inline-block;
+			margin-right:10px;
+		}
+	}
+	&-appstore{
+		img{
+			max-height:40px;
+			width:auto;
+		}
+	}
+	&-mainimage{
+		min-height:450px;
+		width:100%;
+    background:#ccc;
+    background-size: cover;
+	}
+	&-thumbnails{
+		display:flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		.listingsGalleryThumbnail-wrapper{
+			flex-basis:25%;
+			margin-top:16px;
+			padding-right:10px;
+			&:last-of-type{
+				padding-right:0;
+			}
+
+			.listingsGalleryThumbnail{
+				min-height: 90px;
+				cursor: pointer;
+				background-size: contain;
+				border: 1px solid transparent;
+				transition: all .25s ease-out;
+
+				&:hover{
+					border: 1px solid $blue;
+				}
+			}
+		}
+	}
+}
+
+.listingswitcher{
+	.tab-section-content-section{
+		h1{
+			font-size: 1.9994rem;
+   			line-height: 1.35;
+		}
+		h2{
+			color:$black;
+			font-size: 1.414rem;
+			line-height: 1.5;
+		}
+		ul{
+			padding: 0 15px 15px 15px;
+		}
+	}
+}
+
+.listings-information{
+	background:$blk-200;
+	background-image: url('https://www.esri.com/content/dam/esrisites/en-us/arcgis/products/arcgis-pro/december-2018-assets/hover-topo-1.png');
+	background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+	svg, .icon-ui-svg{
+		fill: $theme;
+	}
+}
+.contentbar{
+	min-height:initial;
+	border-bottom:$blk-160 1px solid;
+
+	&-icon{
+		svg, .icon-ui-svg{
+			fill: $theme;
+			height:48px;
+			width:64px;
+		}
+	}
+}
+
+.tabbed-content-switcher{
+	.tab-contents{
+		.tab-section{
+			.seperator{
+				border-top: none;
+				height: 3px;
+				width: 50px;
+				margin-top: 15px;
+				margin-bottom: 20px;
+				background-color: $theme;
+				text-align: left;
+			}
+			&.overview{
+				.column-8 {
+					@media screen and (max-width: $up-to-calcite-tablet){
+						width: 100%;
+						max-width: 94vw;
+					}
+				}
+			}
+			&.reviews{
+				.reviews-header{
+					&-title, &-star, &-rating{
+						display:inline-block;
+					}
+					&-star{
+						padding:0 30px;
+						svg{
+							height:32px;
+							width:32px;
+							fill:$blue;
+						}
+						span{
+							font-size: 1.9994rem;
+    						line-height: 2.325rem;
+						}
+					}
+					.overall-rating{
+						text-align:right;
+						font-weight:600;
+					}
+				}
+				.review-footer{
+
+					.show-more{
+						margin: 40px auto;
+						display:block;
+						text-align: center;
+						&-button{
+							transition: all .25s ease-out;
+							position: relative;
+							&:after{
+								background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%230079c1' d='M25 11.293v1.414l-9.5 9.5-9.5-9.5v-1.414l9.5 9.5z'/%3E%3C/svg%3E");
+								content: "";
+								background-repeat: no-repeat;
+								background-size: contain;
+								background-position: 50% 50%;
+								height: 30px;
+								transition: all .25s ease-in-out;;
+								width: 25px;
+								display: inline-block;
+								margin-left: 5px;
+								position: absolute;
+							}
+							&:hover{
+								text-decoration: none;
+								color:#005e95;
+								&:after{
+									background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23005e95' d='M25 11.293v1.414l-9.5 9.5-9.5-9.5v-1.414l9.5 9.5z'/%3E%3C/svg%3E");
+
+								}
+							}
+						}
+					}
+				}
+				.review-section{
+					border:1px solid $blk-020;
+					padding:20px;
+					display:flex;
+					flex-direction:column;
+					margin-bottom:40px;
+					@media screen and (min-width: $up-to-calcite-tablet){
+						flex-direction:row;
+					}
+					
+
+					&-image{
+						flex-basis: 120px;	
+						min-width: 120px;
+						img{
+							height:80px;
+							width:80px;	
+						}
+					}
+					&-star{
+						@media screen and (min-width: $up-to-calcite-tablet){
+						flex-basis: 150px;	
+						}
+						img{
+							height:64px;
+							width:64px;	
+						}
+					}
+					&-content{
+						padding-right: 30px;
+						flex:1 1 auto;
+						&-name, &-commentdate{
+							display:inline-block;
+						}
+						&-name{
+							color: $blue;
+						}
+						&-commentdate{
+							@media screen and (min-width: $up-to-calcite-tablet){
+							padding:0 20px;
+							}
+							color: $blk-040;
+						}
+						&-description {
+							padding-top:10px;
+							p{
+								margin:0;
+							}
+							
+						}
+					}
+					&-time{
+						flex:1 1 30%;
+						text-align:right;
+						color:$blk-140;
+					}
+				}
+
+			}
+		}
+	}
+}
+
+.tab-section-content-section{
+	ul{
+		padding: 0 20px;
+	}
+	h2{
+		margin-top: 72px;
+		font-size: 1.414rem;
+		line-height: 1.5;
+		font-weight:600;
+		margin-bottom:32px;
+		&:first-of-type{
+			margin-top:10px;
+		}
+	}
+
+}
+.network-table{
+	display:flex;
+	flex-direction: column;
+	background-color:$blk-003;
+	&-header{
+		border-bottom:1px solid #ccc;
+		padding:32px 40px;
+		color: $black;
+
+		img{
+			height:40px;
+			display:inline-block;
+		}
+	}
+	&-content{
+		padding: 0 40px 40px 40px;
+		&-subheader{
+			margin-top:56px;
+		}
+		p a, p span{
+			display:block;
+		}
+
+		.network-table-content-list{
+			padding:0 15px;
+		}
+	}
+}
+
+.overview-section{
+	.seperator{
+		border-top: none;
+		height: 3px;
+		width: 50px;
+		margin-top: 15px;
+		margin-bottom: 20px;
+		background-color: $theme;
+		text-align: left;
+
+	}
+
+}
+
+
+.more-information{
+	border-bottom:$blk-160 1px solid;
+	&[data-attribute="product-listing"]{
+		background: #2a2a2a url('https://www.esri.com/content/dam/esrisites/en-us/marketplace/test-assets/marketplace-product-listings-bottom-bg-2560x1400.jpg') no-repeat center bottom;
+	}
+	&:last-of-type{
+		border-bottom:none;
+	}
+	.cards-simple{
+		a:hover{
+			border: solid 1px $theme;
+			.card-content{
+				border-left: solid 3px $theme;
+			}
+		}
+	}
+}
+
+.icon-title-series{
+	.darktheme{
+		background-color: #efefef;
+	}
+	svg, .icon-ui-svg{
+		fill: $theme;
+	}
+	.icon-title{
+		padding:20px 0;
+	}
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.two-thirds-tile-divide_container{
+	background: url('https://www.esri.com/content/dam/esrisites/en-us/marketplace/test-assets/marketplace-services-listings-case-studies-bg-1706x900.jpg') no-repeat center;
+	background-size: cover;
+	.left{
+		background-color: $blk-220;
+		&:after{
+			border-left-color: $blk-220;
+		}
+		.cta-buttons--actions-cta{
+			padding:10px 20px;
+		}
+	}
+	.right{
+		.block{
+			background-color: $blk-220;
+		}
+	}
+}
+
+.more-from-provider{
+	background: #222222;
+}
+
+.benefits{
+	background:$blk-003;
+	&.products{
+		.text-link-stack-icon{
+			margin:0 auto;
+		}
+		.headerimage{
+			text-align:center;
+		}
+		.contentarea{
+			.cardtitle{
+				text-align:center;
+			}
+			.contenttext{
+				display:none;
+			}
+		}
+	}
+}
